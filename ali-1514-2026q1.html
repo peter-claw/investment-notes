@@ -25,7 +25,7 @@ th { background-color: #f8f9fa; font-weight: bold; }
 <strong>風險等級：</strong> 中</p>
 
 <p><em>報告基準股價：117.5 元，取自 <a href="https://finance.yahoo.com/quote/1514.TW/">Yahoo Finance</a>，日期 2026/03/06 收盤價</em><br>
-<em>基準股本：2.731 億股 (根據公開資訊觀測站已發行普通股數)</em></p>
+<em>基準股本：NT$ 27.31 億元（約 2.731 億股） (根據公開資訊觀測站已發行普通股數)</em></p>
 
 <div class="callout" style="background-color: #e8f4f8; border-left-color: #2980b9;">
     💡 <strong>投資小白救星：</strong> 報告中出現的 PEG, DCF, FCF, ROE 看不懂嗎？ 👉 <a href="./glossary.html" target="_blank"><strong>點此閱讀：CFA 投資分析名詞「白話文」辭典</strong></a>
@@ -109,9 +109,57 @@ th { background-color: #f8f9fa; font-weight: bold; }
 
 <hr>
 
-<h2>4. 產業分析與同業比較</h2>
-<h3>4.1 收入持續性探討 (Project-based vs. Recurring)</h3>
-<p>機電工程為一次性專案 (Project-based)。雖有 UPS 維護合約，但比例尚不足以扭轉整體商業模式。不應給予 SaaS 級別的高估值。</p>
+<h2>4. 產業分析與同業比較 (Industry Analysis & Peer Comparison)</h2>
+
+<h3>4.1 ROE 與重電業競爭力辯證</h3>
+<p>在台股「重電四雄」中，亞力的 ROE 穩定但並非最高。其主要商業模式是建立在「台電強韌電網標案」與「台積電建廠 UPS 統包」這兩條雙引擎上。此一模式保障了下檔的訂單能見度，但由於缺乏海外變壓器 (如華城) 的暴利定價權，毛利率天花板較為受限。</p>
+
+<h3>4.2 同業與競爭比較矩陣 (Peer Comparison)</h3>
+<p>我們將亞力與台股其他三大重電廠進行深度比較：</p>
+<table>
+    <tr>
+        <th>指標</th>
+        <th>亞力 (1514)</th>
+        <th>華城 (1519)</th>
+        <th>士電 (1503)</th>
+        <th>中興電 (1513)</th>
+    </tr>
+    <tr>
+        <td>核心護城河</td>
+        <td>不斷電系統 (UPS)、軌道工程</td>
+        <td>外銷 345kV/500kV 變壓器</td>
+        <td>重型配電變壓器、車用開關</td>
+        <td>GIS 氣體絕緣開關 (高市佔)</td>
+    </tr>
+    <tr>
+        <td>主要驅動力</td>
+        <td>台積電建廠、台電標案</td>
+        <td>北美電網基建 (暴利)</td>
+        <td>太陽能統包、廠房擴建</td>
+        <td>台電變電站更新、離岸風電</td>
+    </tr>
+    <tr>
+        <td>2025年預估 EPS</td>
+        <td>約 3.10 元</td>
+        <td>約 15 - 18 元</td>
+        <td>約 6 - 7 元</td>
+        <td>約 8 - 9 元</td>
+    </tr>
+    <tr>
+        <td>Forward PE (常態)</td>
+        <td>30x - 35x</td>
+        <td>35x - 45x</td>
+        <td>25x - 30x</td>
+        <td>20x - 25x</td>
+    </tr>
+</table>
+<div class="callout">📎 <strong>資料來源</strong>：EPS 共識預估取自 Winvest 與各大本土券商研報之中位數 (2026/03/06)，華城因具備北美定價權享有最高 PE 溢價。</div>
+
+<h3>4.3 收入持續性探討 (Project-based vs. Recurring)</h3>
+<ul>
+    <li><strong>專案與機電工程 (Project-based)</strong>：變電站工程與台電標案屬於典型的一次性收入。工程入帳後若無法爭取到下一個標案，營收極易產生斷層。這也是重電廠在估值上「絕對不應給予 SaaS 級別的高本益比」之核心原因。</li>
+    <li><strong>經常性合約收入 (Recurring)</strong>：亞力的 UPS (不斷電系統) 與部分台積電變電站設有後續的維護合約。這部分提供了細水長流的毛利支撐，但整體佔比仍無法扭轉「接單生產」的重資產特性。</li>
+</ul>
 
 <hr>
 
@@ -134,10 +182,14 @@ th { background-color: #f8f9fa; font-weight: bold; }
 <p>歷史常態 PE 在 12x-17x 之間。目前 Forward PE 達 <strong>30.9x</strong>，位於絕對高檔。目標價給予 30.0 倍，僅為 <strong>108.0 元</strong>，低於現價。</p>
 <div class="callout">📎 <strong>資料來源</strong>：歷史 PE 依據 Yahoo Finance。2026E EPS 綜合各大券商研報。</div>
 
-<h3>5.2 WACC 推導與 DCF 逐年預估 (嚴謹版)</h3>
+<h3>5.3 企業價值倍數 (EV/EBITDA) 絕對估值</h3>
+<p>重電產業具備高折舊與前期墊款特性，改採 EV/EBITDA 估值更具參考性：</p>
 <ul>
-    <li><strong>WACC 計算</strong>：交叉比對 Damodaran 台灣重電業平均，WACC 設定為 <strong>10.5%</strong>。</li>
+    <li><strong>企業價值 (EV)</strong>：市值 318 億 + 淨負債約 15 億 = 333 億</li>
+    <li><strong>預估 EBITDA</strong>：約 15 億</li>
+    <li><strong>Forward EV/EBITDA</strong>：<code>333 / 15 = 22.2x</code></li>
 </ul>
+<p><strong>估值結論</strong>：EV/EBITDA 高達 22.2 倍，遠高於重電業常態 (10-15x)，顯示股價已透支未來數年的綠能題材成長空間，印證了偏貴的結論。</p>
 <strong>逐年 FCF 折現表 (單位：億元, WACC = 10.5%)</strong>
 <table>
     <tr><th>年度</th><th>2026E</th><th>2027E</th><th>2028E</th><th>2029E</th><th>2030E</th></tr>
