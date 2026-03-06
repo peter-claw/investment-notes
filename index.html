@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>Peter Investment Brain - 投資分析總覽</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 1000px; margin: 0 auto; padding: 20px; color: #333; background-color: #f4f6f8; }
+h1 { color: #2c3e50; border-bottom: 3px solid #2980b9; padding-bottom: 15px; text-align: center; margin-top: 40px; }
+h2 { color: #34495e; margin-top: 40px; border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; margin-top: 25px; }
+.card { background-color: #ffffff; border: 1px solid #e1e8ed; border-radius: 10px; padding: 25px; text-align: center; transition: transform 0.2s ease, box-shadow 0.2s ease; text-decoration: none; color: inherit; display: block; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); border-color: #2980b9; }
+.ticker { font-size: 1.8em; font-weight: 800; color: #2c3e50; margin-bottom: 5px; letter-spacing: 1px; }
+.company { font-size: 1.3em; color: #7f8c8d; margin-bottom: 20px; font-weight: 600; }
+.rating { font-size: 1em; font-weight: bold; padding: 8px 15px; border-radius: 20px; display: inline-block; }
+.rating-strong-buy { background-color: #d1f2eb; color: #1e8449; border: 1px solid #a3e4d7; }
+.rating-accumulate { background-color: #fef9e7; color: #d4ac0d; border: 1px solid #f9e79f; }
+.rating-hold { background-color: #fcf3cf; color: #b7950b; border: 1px solid #f7dc6f; }
+.callout { background-color: #e8f4f8; border-left: 5px solid #2980b9; padding: 20px; margin: 30px 0; font-size: 1.1em; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.callout a { font-weight: bold; color: #2980b9; text-decoration: none; }
+.callout a:hover { text-decoration: underline; }
+.footer { margin-top: 60px; text-align: center; color: #95a5a6; font-size: 0.9em; border-top: 1px solid #ddd; padding-top: 20px; padding-bottom: 40px; }
+</style>
+</head>
+<body>
+
+<h1>🧠 Peter Investment Brain<br><span style="font-size: 0.5em; color: #7f8c8d; font-weight: normal;">CFA Institutional Grade 分析報告總覽</span></h1>
+
+<div class="callout">
+    💡 <strong>投資小白導覽：</strong> 在閱讀個股報告前，若有看懂不懂的金融術語 (PEG, DCF, WACC, ROE 等)，<br>
+    👉 <a href="./glossary.html">點此閱讀：CFA 投資分析名詞「白話文」辭典</a>
+</div>
+
+<h2>📈 2026 Q1 深度分析報告清單</h2>
+
+<div class="grid">
+    <!-- TSMC -->
+    <a href="./tsmc-2330-2026q1.html" class="card">
+        <div class="ticker">2330</div>
+        <div class="company">台積電</div>
+        <div class="rating rating-strong-buy">🟢 強烈買進 (Strong Buy)</div>
+    </a>
+
+    <!-- MiTAC -->
+    <a href="./mitac-3706-2026q1.html" class="card">
+        <div class="ticker">3706</div>
+        <div class="company">神達</div>
+        <div class="rating rating-strong-buy">🟢 強烈買進 (Strong Buy)</div>
+    </a>
+
+    <!-- EMC -->
+    <a href="./emc-2383-2026q1.html" class="card">
+        <div class="ticker">2383</div>
+        <div class="company">台光電</div>
+        <div class="rating rating-accumulate">🟡 逢低買進 (Accumulate)</div>
+    </a>
+
+    <!-- Ali -->
+    <a href="./ali-1514-2026q1.html" class="card">
+        <div class="ticker">1514</div>
+        <div class="company">亞力</div>
+        <div class="rating rating-accumulate">🟡 中立偏多 (Accumulate)</div>
+    </a>
+
+    <!-- TECO -->
+    <a href="./teco-1504-2026q1.html" class="card">
+        <div class="ticker">1504</div>
+        <div class="company">東元</div>
+        <div class="rating rating-hold">🟡 持有 (Hold)</div>
+    </a>
+</div>
+
+<div class="footer">
+    <p>所有報告均由 Peter Investment Brain 系統自動化生成，並受 QA Auditor 嚴格查核。</p>
+    <p>免責聲明：本網站內容僅供學術研究與參考，不構成任何有價證券之買賣邀約。投資有風險，入市須謹慎。</p>
+</div>
+
+</body>
+</html>
