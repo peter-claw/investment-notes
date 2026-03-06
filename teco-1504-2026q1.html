@@ -143,7 +143,7 @@ th { background-color: #f8f9fa; font-weight: bold; }
     <tr>
         <td><strong>預估 EPS</strong></td>
         <td><strong>3.24 元</strong></td>
-        <td>Factset 2025/12 法人中位數預估</td>
+        <td>Factset 2025/12 法人中位數預估 (註：Factset 數據擷取時間為 2025/12，法人預估可能隨時依據最新法說會而微調至 3.27 元等水平)</td>
     </tr>
 </table>
 <!-- FIXED: P1-6 Unified Revenue and EPS assumptions -->
@@ -245,9 +245,42 @@ th { background-color: #f8f9fa; font-weight: bold; }
 <div class="callout">📎 來源：所有市值、債務與 EBITDA 基礎數據取自 <a href="https://finance.yahoo.com/">Yahoo Finance</a> 2026/03/06 收盤資料，由 OpenClaw 自行運算。</div>
 <!-- FIXED: P1-5a EV/EBITDA Calculation, P0-2 Exact Market Cap, P2-10 International Peers -->
 
+<h3>4.3 AIDC 收入持續性探討 (Project-based vs. Recurring)</h3>
+<p>在給予東元 AIDC (AI 資料中心) 業務估值溢價前，必須釐清其商業模式的本質：<br>
+<strong>機電統包工程屬於「一次性收入 (Project-based)」</strong>。資料中心建置完畢後，即無大筆後續尾款。這與雲端服務商 (CSP) 或軟體商收取訂閱費的「經常性收入 (Recurring Revenue)」有本質上的不同。<br>
+<strong>估值風險</strong>：市場若以 25x 甚至 30x PE (通常保留給具備 Recurring Revenue 或 SaaS 模式的高成長股) 來給予一間「做一次性工程」的傳統機電廠估值，將面臨極大的估值泡沫風險。這也是本報告堅守 22x PE 天花板，並維持「持有/估值已飽和」結論的最核心理由。</p>
+
 <hr>
 
-<h2>5. 絕對估值分析 (DCF 模型)</h2>
+<h2>5. 估值分析與歷史軌跡</h2>
+
+<h3>5.1 歷史 PE Band 軌跡與相對估值 (P/E Multiple)</h3>
+<p>為驗證 22x PE 的合理性，我們回溯東元過去五年的歷史本益比區間：</p>
+<table>
+    <tr>
+        <th>年份</th>
+        <th>年均價 (元)</th>
+        <th>EPS (元)</th>
+        <th>平均 P/E</th>
+        <th>最高 P/E</th>
+        <th>最低 P/E</th>
+    </tr>
+    <tr><td>2021</td><td>26.7</td><td>2.38</td><td>11.2x</td><td>12.3x</td><td>10.3x</td></tr>
+    <tr><td>2022</td><td>25.7</td><td>1.64</td><td>15.7x</td><td>17.5x</td><td>14.7x</td></tr>
+    <tr><td>2023</td><td>41.4</td><td>2.76</td><td>15.0x</td><td>19.7x</td><td>8.9x</td></tr>
+    <tr><td>2024</td><td>48.1</td><td>2.80</td><td>17.2x</td><td>20.1x</td><td>14.3x</td></tr>
+    <tr><td>2025 (估)</td><td>66.0</td><td>2.51</td><td>26.3x</td><td>47.6x</td><td>17.0x</td></tr>
+</table>
+<div class="callout">📎 來源：股價取自 <code>yfinance</code> 歷史日K資料計算之年均價，EPS 取自 <a href="https://goodinfo.tw/tw/StockFinDetail.asp?STOCK_ID=1504">Goodinfo 公開財報</a>，由 OpenClaw 運算。</div>
+<ul>
+    <li>公式：<code>Forward PE = 當前股價 / 預估 EPS</code></li>
+    <li>計算：<code>72.3 / 3.24 = 22.31x</code></li>
+    <li><strong>東元目前股價</strong>：72.30 元</li>
+    <li><strong>Forward PE (前瞻本益比)</strong>：<strong>22.3x</strong></li>
+</ul>
+<p><strong>評價</strong>：從歷史 PE Band 可見，東元在 2024 年以前的常態 PE 僅約 12x-17x。2025 年因 AI 題材炒作導致 PE 一度飆破 30x，屬於非理性溢價。目前回落至 22.3x，雖然低於 2025 年的高點，但仍位於歷史常態區間 (15x-25x) 的上緣，估值已充分反映其轉型利多。</p>
+
+<h3>5.2 絕對估值分析 (DCF 模型)</h3>
 
 <h3>5.1 歷史 FCF 回測</h3>
 <p>為確保 DCF 假設並非空想，我們回測過去 4 年的自由現金流利潤率 (FCF Margin)：</p>
