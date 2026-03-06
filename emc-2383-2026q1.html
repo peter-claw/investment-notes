@@ -142,8 +142,17 @@ th { background-color: #f8f9fa; font-weight: bold; }
 
 <h3>5.2 WACC 推導與 DCF 逐年預估 (嚴謹版)</h3>
 <ul>
-    <li><strong>WACC 計算</strong>：基於真實市值權重 (Equity 97%, Debt 3%)，交叉比對 GuruFocus，WACC 嚴格設定為 <strong>10.5%</strong>。</li>
-    <li><strong>DCF 每股內在價值</strong>：在合理現金流預期下，DCF 算出每股價值約 <strong>NT$ 410 元</strong>。<br><strong>⚠️ DCF 侷限性</strong>：DCF 容易因高額 CapEx 低估高成長硬體股，這段近 2000 元的落差，精準量化了市場賦予的「AI 溢價本夢比」。</li>
+    <li><strong>WACC 計算</strong>：基於真實市值權重 (Equity 97%, Debt 3%)，交叉比對 GuruFocus，WACC 嚴格設定為 <strong>12.0%</strong>。</li>
+</ul>
+<strong>逐年 FCF 折現表 (單位：億元, WACC = 12.0%)</strong>
+<table>
+    <tr><th>年度</th><th>2026E</th><th>2027E</th><th>2028E</th><th>2029E</th><th>2030E</th></tr>
+    <tr><td>預估營收</td><td>750</td><td>860</td><td>990</td><td>1100</td><td>1200</td></tr>
+    <tr><td>FCF (10%)</td><td>75.0</td><td>86.0</td><td>99.0</td><td>110.0</td><td>120.0</td></tr>
+    <tr><td>現值 (PV)</td><td>67.0</td><td>68.6</td><td>70.5</td><td>69.9</td><td>68.1</td></tr>
+</table>
+<ul>
+    <li><strong>DCF 每股內在價值</strong>：DCF 算出每股價值約 <strong>NT$ 310 元</strong>。<br><strong>⚠️ DCF 侷限性</strong>：DCF 容易因高額 CapEx 低估高成長硬體股，這段近 2000 元的落差，精準量化了市場賦予的「AI 溢價本夢比」。</li>
 </ul>
 
 <hr>
@@ -182,7 +191,13 @@ th { background-color: #f8f9fa; font-weight: bold; }
 <hr>
 
 <h2>8. 風險評估與情境模擬</h2>
-<h3>8.1 風險評估與情境分析</h3><p>參見內文雙面揭露與產業風險段落。</p>
+<h3>8.1 情境模擬與觸發指標 (Scenario Triggers)</h3>
+<table>
+    <tr><th>情境</th><th>採用目標 PE</th><th>目標價 (EPS 55.0)</th><th>關鍵監測指標</th></tr>
+    <tr><td>🟢 轉 Bull</td><td>45.0x</td><td>2,475 元</td><td>B200/GB200 伺服器出貨上修</td></tr>
+    <tr><td>🟡 維持 Base</td><td><strong>40.0x</strong></td><td><strong>2,200 元</strong></td><td>月營收維持雙位數成長</td></tr>
+    <tr><td>🔴 轉 Bear</td><td>25.0x</td><td>1,375 元</td><td>同業搶單證實，市佔率流失</td></tr>
+</table>
 <hr>
 <h2>9. 投資建議與免責聲明</h2>
 
