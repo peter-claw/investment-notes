@@ -28,19 +28,39 @@ h2 { color: #e67e22; margin-top: 30px; border-bottom: 1px solid #eee; padding-bo
     <strong>Forward PE</strong> 是用「明年預估」賺的錢來算，這是外資真正看重的指標，因為買股票是買未來。</p>
 </div>
 
-<div class="card">
-    <div class="term">2. PEG Ratio (本益成長比)</div>
-    <div class="concept">公式：Forward PE ÷ EPS 預估成長率</div>
-    <p><strong>白話文：</strong>「成長股的照妖鏡」。<br>
-    一檔股票 PE 達 40 倍聽起來很貴，但如果它明年盈餘成長率高達 80%，它的 PEG 就是 40/80 = 0.5。<br>
-    <strong>判斷標準：</strong> PEG < 1 代表被低估（便宜），PEG > 1.5 則代表股價已經透支了未來的成長（太貴）。</p>
+<div class="card" id="peg">
+    <div class="term">2. PEG Ratio (Price/Earnings to Growth, 本益成長比)</div>
+    <div class="concept">公式：Forward PE (本益比) ÷ EPS 預估成長率 (去掉百分比符號)</div>
+    <p><strong>白話文：</strong>「用成長速度來衡量，現在的股價到底貴不貴？」</p>
+    <p><strong>舉例解釋：</strong><br>
+    假設 A 公司跟 B 公司的「本益比」現在都是 20 倍。光看本益比，你會覺得它們一樣貴。<br>
+    但是，如果 A 公司明年的獲利只能成長 <strong>5%</strong>，B 公司明年獲利能成長 <strong>40%</strong> 呢？<br>
+    * A 公司的 PEG = 20 / 5 = <strong>4.0</strong> (非常貴！因為它長得太慢了，配不上 20 倍的本益比)<br>
+    * B 公司的 PEG = 20 / 40 = <strong>0.5</strong> (非常便宜！因為它長得極快，20 倍本益比對它來說太委屈了)
+    </p>
+    <ul>
+        <li><strong>一般水準是多少？</strong><br>
+        傳統華爾街標準：<strong>PEG = 1 是合理價</strong>。如果 <code>PEG < 1</code>，代表這檔股票的成長動能被市場低估，是買進的絕佳時機；如果 <code>PEG > 1.5 或 2</code>，代表股價已經透支了未來的成長，容易產生泡沫。</li>
+    </ul>
 </div>
 
-<div class="card">
+<div class="card" id="evebitda">
     <div class="term">3. EV/EBITDA (企業價值倍數)</div>
     <div class="concept">公式：(市值 + 總負債 - 總現金) ÷ 稅息折舊及攤銷前利潤</div>
-    <p><strong>白話文：</strong>「買下整間公司要花多少錢？」<br>
-    這比 PE 更精準，因為它考慮了公司的「負債」跟「現金」。如果一家公司滿手現金，就算 PE 看似很高，EV/EBITDA 算出來可能會很便宜。這是併購案最愛用的指標。</p>
+    <p><strong>白話文：</strong>「真正的『買下整間公司』需要多少錢？幾年能回本？」</p>
+    <p><strong>舉例解釋：</strong><br>
+    假設你看上了一家飲料店，老闆說「賣你 100 萬 (市值)」。<br>
+    但你接手後發現，這家店還欠銀行 20 萬 (負債)，不過收銀機裡還有 5 萬現金 (現金)。<br>
+    所以你真正付出的代價 (EV 企業價值) 是：<code>100萬 + 20萬(你要替他還債) - 5萬(你能拿走的現金) = 115 萬</code>。<br>
+    而這家店每年能創造 23 萬的現金利潤 (EBITDA)。<br>
+    那麼這家店的 <strong>EV/EBITDA = 115 / 23 = 5 倍</strong>。意思是，你買下這家店，連本帶利加上還債，大約 5 年可以回本。
+    </p>
+    <ul>
+        <li><strong>為什麼外資愛用它取代 PE (本益比)？</strong><br>
+        因為 PE 只看「市值」跟「帳面盈餘」，沒有把「負債」算進去。有些重工業（如長榮、東元）可能 PE 看起來很低，但其實背了滿山滿谷的債務，用 EV/EBITDA 一照妖，就會發現其實很貴。</li>
+        <li><strong>一般水準是多少？</strong><br>
+        通常 <strong>EV/EBITDA 在 8 倍到 12 倍</strong> 之間算合理。低於 8 倍通常被視為低估（或有隱藏風險），超過 15 倍以上通常只會給予高成長的科技股。</li>
+    </ul>
 </div>
 
 <h2>二、 絕對估值：DCF 模型專區 (Discounted Cash Flow)</h2>
@@ -51,10 +71,17 @@ h2 { color: #e67e22; margin-top: 30px; border-bottom: 1px solid #eee; padding-bo
     營業賺來的錢，扣掉買機器、蓋廠房的錢（CapEx），剩下的才是 FCF。如果一家公司 EPS 很高，但 FCF 一直是負的（都在蓋廠），代表它其實一直在「燒錢」，一旦景氣反轉就會很危險。</p>
 </div>
 
-<div class="card">
+<div class="card" id="wacc">
     <div class="term">5. WACC (加權平均資本成本)</div>
-    <p><strong>白話文：</strong>「公司籌錢的利息成本」。<br>
-    公司做生意要用股東的錢（股票）和銀行的錢（借款）。WACC 就是這筆錢的「綜合利息」。在 DCF 模型中，我們會用 WACC 來把未來的錢「打折」算回現在的價值（折現率）。WACC 越高，代表風險越大，算出來的股價就會越低。</p>
+    <p><strong>白話文：</strong>「公司籌錢的『綜合利息』成本」。也是投資人對這家公司的「最低期望報酬率」。</p>
+    <p><strong>舉例解釋：</strong><br>
+    如果你開公司，有一半的錢是跟銀行借的（利息 2%），另一半是找金主投資的（金主要求 10% 的回報）。那你的 WACC 大約就是 <code>(2% + 10%) / 2 = 6%</code>。<br>
+    這代表什麼？這代表你公司拿這些錢去做生意，**每年至少要賺超過 6%，你才對得起銀行跟金主**。如果你的生意只賺 4%，你就是在「毀滅價值」。
+    </p>
+    <ul>
+        <li><strong>為什麼在 DCF 模型裡，WACC 越高，算出來的股價越低？</strong><br>
+        因為未來的錢是不確定的（有風險）。如果一家公司風險很高（例如常接到爛單的重電廠，Beta 值很高），投資人就會要求很高的 WACC (例如 10%)。當我們把這家公司未來 5 年能賺到的錢，每年扣掉 10% 算回今天的價值（折現）時，剩下來的錢就變少了，算出來的合理股價自然就低。</li>
+    </ul>
 </div>
 
 <div class="card">
@@ -67,10 +94,17 @@ h2 { color: #e67e22; margin-top: 30px; border-bottom: 1px solid #eee; padding-bo
 
 <h2>三、 財務體質與商業模式</h2>
 
-<div class="card">
+<div class="card" id="roe">
     <div class="term">7. ROE (Return on Equity, 股東權益報酬率)</div>
-    <p><strong>白話文：</strong>「公司拿股東的錢去做生意的賺錢效率」。<br>
-    ROE 越高越好（巴菲特最愛）。通常大於 15% 算優秀。如果一家公司 ROE 只有 5%，市場卻給它 30 倍的本益比，這通常是「泡沫」或「轉機題材」，基本面是撐不住的。</p>
+    <div class="concept">公式：稅後淨利 ÷ 股東權益 (也就是公司總資產扣掉總負債，剩下的淨值)</div>
+    <p><strong>白話文：</strong>「公司拿你(股東)出資的錢，每年能幫你賺幾趴回來？」</p>
+    <p><strong>舉例解釋：</strong>假設你和朋友合資 100 萬開了一家雞排店（這 100 萬就是股東權益）。如果這家店一年後扣掉所有成本，淨賺了 15 萬。那麼這家店的 ROE 就是 <code>15萬 / 100萬 = 15%</code>。</p>
+    <ul>
+        <li><strong>一般水準是多少？</strong> 在台灣股市，一家公司 ROE 能常年穩定在 <strong>10% ~ 15%</strong>，就算是一家體質不錯的好公司了。巴菲特選股的鐵律之一，就是挑選 ROE 長期大於 15% 的公司。</li>
+        <li><strong>為什麼說台積電 ROE 35.89% 是「奇蹟」？</strong><br>
+        開一家 100 萬的雞排店要賺 15 萬 (ROE 15%) 也許不難；但如果今天你的本金（股東權益）膨脹到 <strong>5 兆台幣</strong>（這是台積電的股東權益），你要維持 35.89% 的 ROE，代表你一年要憑空變出將近 <strong>1.7 兆台幣的淨利潤</strong>！<br>
+        這違反了經濟學的「報酬遞減法則」（當公司大到一個程度，錢會越來越難賺）。台積電能用 5 兆的龐大身軀，飆出將近 36% 的 ROE，代表它在全世界完全沒有對手，這就是為什麼這被稱為「奇蹟」。</li>
+    </ul>
 </div>
 
 <div class="card">
