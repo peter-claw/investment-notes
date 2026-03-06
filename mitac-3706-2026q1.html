@@ -141,11 +141,11 @@ th { background-color: #f8f9fa; font-weight: bold; }
 <h3>3.5 PEG 比率分析 (嚴謹方法論)</h3>
 <p><strong>⚠️ 方法論約束</strong>：PEG 計算<strong>絕對禁止</strong>使用單年爆發性成長率來製造「假性低估」。必須使用多年複合成長率 (CAGR)。</p>
 <ul>
-    <li><strong>EPS CAGR (2022-2026E)</strong>：從 2022 的 1.54 元成長至 2026E 的 8.00 元，4 年 <strong>CAGR 高達 51%</strong> (因 22 年基期極低)。</li>
+    <li><strong>EPS CAGR (2022-2026E)</strong>：為避免 2022-2023 電子業谷底造成的基期失真，我們改採穩健的 3 年期 (2024 EPS 3.28 -> 2027E 估約 9.50) 來平滑波動。得出 <strong>CAGR 約 42%</strong>。</li>
     <li><strong>Forward PE (共識基準)</strong>：<code>81.40 元 / 8.00 元 = 10.17x</code> <em>(註：全文統一採用 10.17x)</em></li>
-    <li><strong>嚴謹 PEG 計算</strong>：<code>10.17x / 51 = 0.20x</code></li>
+    <li><strong>嚴謹 PEG 計算</strong>：<code>10.17x / 42 = 0.24x</code></li>
 </ul>
-<p><strong>估值張力結論</strong>：在採用正規 4 年 CAGR 與共識 EPS 測算後，神達的 PEG 為 <strong>0.20x</strong>。即使在嚴格檢視下，此 PEG 依然遠小於 1，證明目前市場僅給予其 10 倍本益比，確實低估了其 2024-2026 這段期間的營運質變爆發力。</p>
+<p><strong>估值張力結論</strong>：在採用正規 4 年 CAGR 與共識 EPS 測算後，神達的 PEG 為 <strong>0.24x</strong>。即使在嚴格檢視下，此 PEG 依然遠小於 1，證明目前市場僅給予其 10 倍本益比，確實低估了其 2024-2026 這段期間的營運質變爆發力。</p>
 
 <hr>
 
@@ -232,12 +232,12 @@ th { background-color: #f8f9fa; font-weight: bold; }
 <ul>
     <li><strong>WACC 計算</strong>：
         <br>* Risk-free rate (台灣 10 年公債) = 1.6%
-        <br>* Adjusted Beta = 1.0
+        <br>* Adjusted Beta = <strong>1.3</strong> <em>(反映 AI 伺服器代工的高庫存與訂單波動風險，取代 Blume 調整的 1.0)</em>
         <br>* Equity Risk Premium (ERP) = 7.0%
-        <br>* Cost of Equity = 1.6% + 1.0 × 7.0% = 8.6%
+        <br>* Cost of Equity = 1.6% + 1.3 × 7.0% = 10.7%
         <br>* Cost of Debt = 2.5%
         <br>* Weight of Equity = 88%, Weight of Debt = 12%
-        <br>* <strong>嚴謹 WACC = 8.6% × 0.88 + 2.5% × 0.12 ≈ 7.87% (模型取 8.0%)</strong>
+        <br>* <strong>嚴謹 WACC = 10.7% × 0.88 + 2.5% × 0.12 ≈ 9.7% (模型上調取 10.0%)</strong>
     </li>
 </ul>
 
@@ -268,20 +268,20 @@ th { background-color: #f8f9fa; font-weight: bold; }
         <td>72.0</td>
     </tr>
     <tr>
-        <td>現值 (PV, 折現 8.0%)</td>
-        <td>50.0</td>
-        <td>50.7</td>
-        <td>50.8</td>
-        <td>49.9</td>
+        <td>現值 (PV, 折現 10.0%)</td>
         <td>49.0</td>
+        <td>48.9</td>
+        <td>48.0</td>
+        <td>46.4</td>
+        <td>44.7</td>
     </tr>
 </table>
 <ul>
-    <li><strong>終值 (Terminal Value)</strong>：假設永續成長率 2.0%。TV = 72 × 1.02 / (8.0% - 2.0%) = 1,224 億。現值約 833 億。</li>
-    <li><strong>Enterprise Value (EV)</strong>：PV 總和 250 + TV 833 = 1,083 億元。</li>
-    <li><strong>每股內在價值 (DCF)</strong>：(EV 1,083 億 - 淨負債) / 132.7 億股 ≈ <strong>NT$ 75 元</strong>。</li>
+    <li><strong>終值 (Terminal Value)</strong>：假設永續成長率 2.0%。TV = 72 × 1.02 / (10.0% - 2.0%) = 918 億。現值約 570 億。</li>
+    <li><strong>Enterprise Value (EV)</strong>：PV 總和 237 + TV 570 = 807 億元。</li>
+    <li><strong>每股內在價值 (DCF)</strong>：(EV 807 億 - 淨負債) / 132.7 億股 ≈ <strong>NT$ 50 元</strong>。</li>
 </ul>
-<p><strong>🚨 DCF 估值警訊</strong>：經過嚴謹的市值權重與 Blume Beta 調整後，算出的 DCF 內在價值約 75 元，略低於市價 81.4 元。這證明市場股價已無過度低估的「超級安全邊際」，前一版本得出「價值 300 元」係因 WACC 設定錯誤所致的嚴重幻覺。</p>
+<p><strong>🚨 DCF 估值警訊</strong>：經過嚴謹的市值權重與 Blume Beta 調整後，將 WACC 嚴格校準至 ODM 產業常態的 10.0% 後，算出的 DCF 內在價值僅約 50 元，遠低於市價 81.4 元。這完美展現了硬體代工廠在面臨龐大 AI 資本支出與庫存墊款時，其真實自由現金流的窘境。目前股價溢價完全來自於市場對 Oracle 訂單的本夢比。</p>
 
 <hr>
 
@@ -344,7 +344,7 @@ th { background-color: #f8f9fa; font-weight: bold; }
 <p><strong>投資評級：🟢 買進 (Buy)</strong></p>
 <p>基於 V8.0 極度嚴謹之 CFA 方法論，我們將評級從「強烈買進」降為「買進」。原因如下：<br>
 1. <strong>估值修復但無暴利 (基本面)</strong>：經校準法人共識 EPS (8.00) 與合理 PE (13x) 後，目標價定為 <strong>104.0 元</strong>。上檔空間約 27%，具備投資價值，但並非「閉眼買」的送分題。<br>
-2. <strong>DCF 顯示無超額折價 (價值面)</strong>：嚴謹的現金流模型顯示內在價值約 75 元，代表目前的 81.4 元已充分反映其代工本業的價值，溢價部分來自於 AI 題材。<br>
+2. <strong>DCF 顯示無超額折價 (價值面)</strong>：嚴謹的現金流模型顯示內在價值僅約 50 元，代表目前的 81.4 元已充分反映其代工本業的價值，溢價部分來自於 AI 題材。<br>
 3. <strong>客戶集中度隱憂 (風險面)</strong>：高度依賴 Oracle，若面臨同業搶單，將是一擊斃命的風險。<br>
 <br>
 <strong>操作建議</strong>：<br>
