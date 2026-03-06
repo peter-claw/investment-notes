@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>📖 CFA 投資分析名詞白話文辭典 (Glossary)</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; color: #333; }
+h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+h2 { color: #e67e22; margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+.term { font-weight: bold; color: #2980b9; font-size: 1.1em; }
+.card { background-color: #f9f9f9; border-left: 4px solid #3498db; padding: 15px; margin-bottom: 15px; border-radius: 0 5px 5px 0; }
+.concept { color: #555; font-style: italic; font-size: 0.95em; }
+</style>
+</head>
+<body>
+
+<h1>📖 CFA 投資分析名詞「白話文」辭典</h1>
+<p>這份指南旨在將 OpenClaw 深度分析報告中艱澀的華爾街金融詞彙，翻譯成所有人都能秒懂的「白話文」。</p>
+
+<h2>一、 核心估值指標 (Valuation)</h2>
+
+<div class="card">
+    <div class="term">1. P/E Ratio (本益比)</div>
+    <div class="concept">Trailing PE (回顧本益比) vs Forward PE (前瞻本益比)</div>
+    <p><strong>白話文：</strong>「回本需要幾年？」<br>
+    如果你花 100 萬買一家每年幫你賺 10 萬的店，PE 就是 10 倍（10年回本）。<br>
+    <strong>Trailing PE</strong> 是用「過去一年」賺的錢來算，通常只能看後照鏡。<br>
+    <strong>Forward PE</strong> 是用「明年預估」賺的錢來算，這是外資真正看重的指標，因為買股票是買未來。</p>
+</div>
+
+<div class="card">
+    <div class="term">2. PEG Ratio (本益成長比)</div>
+    <div class="concept">公式：Forward PE ÷ EPS 預估成長率</div>
+    <p><strong>白話文：</strong>「成長股的照妖鏡」。<br>
+    一檔股票 PE 達 40 倍聽起來很貴，但如果它明年盈餘成長率高達 80%，它的 PEG 就是 40/80 = 0.5。<br>
+    <strong>判斷標準：</strong> PEG < 1 代表被低估（便宜），PEG > 1.5 則代表股價已經透支了未來的成長（太貴）。</p>
+</div>
+
+<div class="card">
+    <div class="term">3. EV/EBITDA (企業價值倍數)</div>
+    <div class="concept">公式：(市值 + 總負債 - 總現金) ÷ 稅息折舊及攤銷前利潤</div>
+    <p><strong>白話文：</strong>「買下整間公司要花多少錢？」<br>
+    這比 PE 更精準，因為它考慮了公司的「負債」跟「現金」。如果一家公司滿手現金，就算 PE 看似很高，EV/EBITDA 算出來可能會很便宜。這是併購案最愛用的指標。</p>
+</div>
+
+<h2>二、 絕對估值：DCF 模型專區 (Discounted Cash Flow)</h2>
+
+<div class="card">
+    <div class="term">4. FCF (Free Cash Flow, 自由現金流)</div>
+    <p><strong>白話文：</strong>「真正能放進口袋的錢」。<br>
+    營業賺來的錢，扣掉買機器、蓋廠房的錢（CapEx），剩下的才是 FCF。如果一家公司 EPS 很高，但 FCF 一直是負的（都在蓋廠），代表它其實一直在「燒錢」，一旦景氣反轉就會很危險。</p>
+</div>
+
+<div class="card">
+    <div class="term">5. WACC (加權平均資本成本)</div>
+    <p><strong>白話文：</strong>「公司籌錢的利息成本」。<br>
+    公司做生意要用股東的錢（股票）和銀行的錢（借款）。WACC 就是這筆錢的「綜合利息」。在 DCF 模型中，我們會用 WACC 來把未來的錢「打折」算回現在的價值（折現率）。WACC 越高，代表風險越大，算出來的股價就會越低。</p>
+</div>
+
+<div class="card">
+    <div class="term">6. Beta (貝塔值)</div>
+    <p><strong>白話文：</strong>「股價的過動兒指數」。<br>
+    Beta = 1：大盤漲 1%，它就漲 1%。<br>
+    Beta > 1 (如 1.5)：大盤漲 1%，它漲 1.5%（活潑、風險高）。<br>
+    Beta < 1 (如 0.5)：大盤漲 1%，它只漲 0.5%（防禦型、牛皮股）。</p>
+</div>
+
+<h2>三、 財務體質與商業模式</h2>
+
+<div class="card">
+    <div class="term">7. ROE (Return on Equity, 股東權益報酬率)</div>
+    <p><strong>白話文：</strong>「公司拿股東的錢去做生意的賺錢效率」。<br>
+    ROE 越高越好（巴菲特最愛）。通常大於 15% 算優秀。如果一家公司 ROE 只有 5%，市場卻給它 30 倍的本益比，這通常是「泡沫」或「轉機題材」，基本面是撐不住的。</p>
+</div>
+
+<div class="card">
+    <div class="term">8. Project-based vs. Recurring Revenue</div>
+    <p><strong>白話文：</strong>「打獵」與「種田」的差別。<br>
+    <strong>Project-based (一次性工程)</strong>：像蓋廠房、賣機電設備，銀貨兩訖，明年要重找客人。<br>
+    <strong>Recurring (經常性收入)</strong>：像微軟訂閱費、台積電的晶圓代工（客戶被綁死無法輕易換人），每年穩定收錢。市場願意給「經常性收入」的公司極高的 PE 估值。</p>
+</div>
+
+<h2>四、 籌碼面與技術面</h2>
+
+<div class="card">
+    <div class="term">9. 融資餘額 (Margin Balance)</div>
+    <p><strong>白話文：</strong>「散戶借錢買股票的張數」。<br>
+    融資是把雙面刃。在高檔融資大增，叫做「散戶不怕死接刀」，未來跌下來會發生「斷頭多殺多」，這批人會變成未來的解套賣壓（籌碼凌亂）。如果融資極低，代表「籌碼很乾淨」，都是法人在玩，股價容易拉抬。</p>
+</div>
+
+<div class="card">
+    <div class="term">10. 乖離率 (Bias Ratio)</div>
+    <p><strong>白話文：</strong>「股價跑得離均線有多遠」。<br>
+    股價就像小狗，均線就像主人的牽繩。當小狗暴衝跑得離主人太遠（正乖離過大，例如離季線 30%），它隨時會被拉回來（獲利了結賣壓）。</p>
+</div>
+
+</body>
+</html>
