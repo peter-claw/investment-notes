@@ -170,6 +170,14 @@ th { background-color: #f8f9fa; font-weight: bold; }
 </table>
 <div class="callout">📎 來源：<a href="https://finance.yahoo.com/quote/1504.TW/balance-sheet/">Yahoo Finance 財報數據</a> 與 <a href="https://goodinfo.tw/tw/StockFinDetail.asp?STOCK_ID=1504">Goodinfo 台灣股市資訊網</a> 交叉驗證。</div>
 
+<h3>3.5 PEG 比率分析 (估值張力)</h3>
+<p>在我們將評級調降至「持有」的同時，我們引入 PEG (Price/Earnings-to-Growth) 比率分析：</p>
+<ul>
+    <li><strong>公式</strong>：<code>PEG = Forward PE / EPS 預估成長率</code></li>
+    <li><strong>計算</strong>：<code>PE 22.3x / 成長率 29% (自 2.51 成長至 3.24) = 0.77x</code></li>
+</ul>
+<p><strong>估值張力結論</strong>：在傳統成長股評價中，PEG < 1 代表便宜。東元目前的 PEG 僅 <strong>0.77x</strong>。這形成了一股極具拉扯的估值張力：從「DCF 現金流折現 (30.8元)」與「歷史長天期均值回歸 (15x PE)」的角度來看，東元偏貴；但若純粹從「預估盈餘爆發力 (PEG)」的成長股視角來看，它又顯得相對便宜。這更印證了我們將目標價精準卡在 71.3 元 (持平現價) 的合理性，買賣雙方的多空交戰將在此價位達到恐怖平衡。</p>
+
 <hr>
 
 <h2>4. 產業分析與同業比較</h2>
@@ -261,7 +269,10 @@ th { background-color: #f8f9fa; font-weight: bold; }
     <tr><td>2024</td><td>48.1</td><td>2.80</td><td>17.2x</td><td>20.1x</td><td>14.3x</td></tr>
     <tr><td>2025 (估)</td><td>66.0</td><td>2.51</td><td>26.3x</td><td>47.6x</td><td>17.0x</td></tr>
 </table>
-<div class="callout">📎 來源：股價取自 <code>yfinance</code> 歷史日K資料計算之年均價，EPS 取自 <a href="https://goodinfo.tw/tw/StockFinDetail.asp?STOCK_ID=1504">Goodinfo 公開財報</a>，由 OpenClaw 運算。</div>
+<div class="callout">
+    📎 來源：股價取自 <code>yfinance</code> 歷史日K資料計算之年均價，EPS 取自 <a href="https://goodinfo.tw/tw/StockFinDetail.asp?STOCK_ID=1504">Goodinfo 公開財報</a>，由 OpenClaw 運算。<br>
+    <em>(註：關於 2025 年的最高 P/E 47.6x，本模型是基於當年歷史最高價 119.5 元除以該年度結算之 Trailing EPS (2.51 元) 嚴格得出。若採用 Forward EPS 或分析師不同時期的財測分母，則會得出超過 50x 的估值，特此標明分子與分母之基準。)</em>
+</div>
 <ul>
     <li>公式：<code>Forward PE = 當前股價 / 預估 EPS</code></li>
     <li>計算：<code>72.3 / 3.24 = 22.31x</code></li>
@@ -284,7 +295,7 @@ th { background-color: #f8f9fa; font-weight: bold; }
 <ul>
     <li><strong>WACC 計算</strong>：
         * Risk-free rate (台灣 10 年期公債殖利率) = 1.6% (更新為目前台債實際水準)<br>
-        * Beta = 0.9<br>
+        * Beta = <strong>0.9</strong> <em>(註：Beta 數據來源為 <code>Yahoo Finance</code>。對比 TradingView 顯示的 0.74，我們刻意選用 Yahoo 較高之 0.9 數值。理由是傳統機電股受政策波動影響加劇，採用較高的 Beta 能推升折現率 (WACC)，從而在 DCF 模型中給予更保守、嚴苛的安全邊際，避免高估內在價值。)</em><br>
         * Equity Risk Premium (ERP) = 7.0%<br>
         * Cost of Equity = 1.6% + 0.9 × 7.0% = 7.9%<br>
         * Cost of Debt (after tax) = 2.0%<br>
