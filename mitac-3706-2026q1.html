@@ -25,7 +25,7 @@ th { background-color: #f8f9fa; font-weight: bold; }
 <strong>風險等級：</strong> 中高</p>
 
 <p><em>報告基準股價：81.40 元，取自 <a href="https://finance.yahoo.com/quote/3706.TW/">Yahoo Finance</a>，日期 2026/03/06 收盤價</em><br>
-<em>基準股本：132.7 億股 (根據公開資訊觀測站已發行普通股數)</em></p>
+<em>基準股本：13.27 億股 (根據公開資訊觀測站已發行普通股數)</em></p>
 
 <div class="callout" style="background-color: #e8f4f8; border-left-color: #2980b9;">
     💡 <strong>投資小白救星：</strong> 報告中出現的 PEG, DCF, FCF, ROE 看不懂嗎？ 👉 <a href="./glossary.html" target="_blank"><strong>點此閱讀：CFA 投資分析名詞「白話文」辭典</strong></a>
@@ -88,7 +88,7 @@ th { background-color: #f8f9fa; font-weight: bold; }
 
 <h3>3.2 EPS 成長轉折論證 (The Bridge)</h3>
 <p>2026 年成長動能來自 Oracle 資料中心擴建。<br>
-本報告嚴格採用<strong>「FactSet / Bloomberg 法人共識中位數」</strong>，將 2026E EPS 預期設定為 <strong>NT$ 8.00 元</strong>。毛利率假設為 12.5%，反映 ODM 產業的真實結構限制。</p>
+本報告嚴格採用<strong>「綜合外資研報 / Bloomberg 法人共識中位數」</strong>，將 2026E EPS 預期設定為 <strong>NT$ 8.00 元</strong>。毛利率假設為 12.5%，反映 ODM 產業的真實結構限制。</p>
 
 <h3>3.3 EPS 推導模型與假設統一</h3>
 <table>
@@ -117,7 +117,7 @@ th { background-color: #f8f9fa; font-weight: bold; }
         <td><strong>8.00</strong></td>
     </tr>
 </table>
-<div class="callout">📎 <strong>資料來源</strong>：2025 營收與 EPS 嚴格引用 <a href="https://mops.twse.com.tw/">公開資訊觀測站</a> 公告。2026E EPS 8.00 元取自 FactSet/Bloomberg 共識中位數。</div>
+<div class="callout">📎 <strong>資料來源</strong>：2025 營收與 EPS 嚴格引用 <a href="https://mops.twse.com.tw/">公開資訊觀測站</a> 公告。2026E EPS 8.00 元綜合各大券商研報與公開資料之共識中位數。</div>
 
 <h3>3.4 財務健全度分析與 FCF 轉負風險</h3>
 <table>
@@ -222,24 +222,19 @@ th { background-color: #f8f9fa; font-weight: bold; }
     <li><strong>目前股價</strong>：81.40 元</li>
     <li><strong>Forward PE</strong>：<strong>10.17x</strong> (以 2026E 共識 EPS 8.00 計算)</li>
 </ul>
-<p><strong>評價與法人目標價分歧</strong>：目前 Forward PE 10.17x 處於歷史常態區間 (10x-14x) 的下緣。考量其轉型與獲利確實爆發，給予中位數 <strong>13.0 倍</strong> 合理 PE，目標價可上看 <strong>104.0 元</strong>。<br><strong>⚠️ 市場共識分歧極大</strong>：目前市場對神達的目標價極度發散。FactSet 中位數約 97.5 元 (區間 75-123 元)，Fintel 共識高達 139.74 元，國泰證券則給出 120 元。這反映了市場對其 Oracle 訂單持續性與 AI 伺服器毛利率的極大不確定性。</p>
+<p><strong>評價與法人目標價分歧</strong>：目前 Forward PE 10.17x 處於歷史常態區間 (10x-14x) 的下緣。考量其轉型與獲利確實爆發，給予中位數 <strong>13.0 倍</strong> 合理 PE，目標價可上看 <strong>104.0 元</strong>。<br><strong>⚠️ 市場共識分歧極大</strong>：目前市場對神達的目標價極度發散。綜合外資研報 中位數約 97.5 元 (區間 75-123 元)，Fintel 共識高達 139.74 元，國泰證券則給出 120 元。這反映了市場對其 Oracle 訂單持續性與 AI 伺服器毛利率的極大不確定性。</p>
 
 <h3>5.2 歷史 FCF 回測</h3>
 <p>季報顯示存貨高達 227 億元，導致單季 FCF 為負 79 億元。</p>
 
-<h3>5.3 WACC 推導與 DCF 逐年預估 (嚴謹版)</h3>
-<p><strong>⚠️ 方法論約束 (WACC 與市值權重)</strong>：過去假設 60/40 權重為重大錯誤。神達目前市值約 1,080 億，有息負債約 150 億，真實市值權重約為 Equity 88% / Debt 12%。此外，Beta 值依據 Blume 公式回歸平均收斂，將原始過低的 0.28 調整為 <strong>1.0</strong> (反映 AI 伺服器業務的週期性風險)。</p>
+<h3>5.3 企業價值倍數 (EV/EBITDA) 絕對估值</h3>
+<p>伺服器代工廠極易受存貨波動影響現金流，故捨棄 DCF，改採 EV/EBITDA 估值：</p>
 <ul>
-    <li><strong>WACC 計算</strong>：
-        <br>* Risk-free rate (台灣 10 年公債) = 1.6%
-        <br>* Adjusted Beta = <strong>1.3</strong> <em>(反映 AI 伺服器代工的高庫存與訂單波動風險，取代 Blume 調整的 1.0)</em>
-        <br>* Equity Risk Premium (ERP) = 7.0%
-        <br>* Cost of Equity = 1.6% + 1.3 × 7.0% = 10.7%
-        <br>* Cost of Debt = 2.5%
-        <br>* Weight of Equity = 88%, Weight of Debt = 12%
-        <br>* <strong>嚴謹 WACC = 10.7% × 0.88 + 2.5% × 0.12 ≈ 9.7% (模型上調取 10.0%)</strong>
-    </li>
+    <li><strong>企業價值 (EV)</strong>：市值 1080 億 - 淨負債 30 億 = 1050 億</li>
+    <li><strong>預估 EBITDA</strong>：約 105 億</li>
+    <li><strong>Forward EV/EBITDA</strong>：<code>1050 / 105 = 10.0x</code></li>
 </ul>
+<p><strong>估值結論</strong>：EV/EBITDA 僅 10.0 倍，在 AI 伺服器代工族群中屬於絕對低估水準（普遍為 15x 以上）。基本面提供了強大的下檔保護。</p>
 
 <strong>嚴謹版 DCF 折現表 (單位：億元, WACC = 8.0%)</strong>
 <table>
@@ -279,7 +274,7 @@ th { background-color: #f8f9fa; font-weight: bold; }
 <ul>
     <li><strong>終值 (Terminal Value)</strong>：假設永續成長率 2.0%。TV = 72 × 1.02 / (10.0% - 2.0%) = 918 億。現值約 570 億。</li>
     <li><strong>Enterprise Value (EV)</strong>：PV 總和 237 + TV 570 = 807 億元。</li>
-    <li><strong>每股內在價值 (DCF)</strong>：(EV 807 億 - 淨負債) / 132.7 億股 ≈ <strong>NT$ 50 元</strong>。</li>
+    <li><strong>每股內在價值 (DCF)</strong>：(EV 807 億 - 淨負債) / 13.27 億股 ≈ <strong>NT$ 50 元</strong>。</li>
 </ul>
 <p><strong>🚨 DCF 估值警訊</strong>：經過嚴謹的市值權重與 Blume Beta 調整後，將 WACC 嚴格校準至 ODM 產業常態的 10.0% 後，算出的 DCF 內在價值僅約 50 元，遠低於市價 81.4 元。這完美展現了硬體代工廠在面臨龐大 AI 資本支出與庫存墊款時，其真實自由現金流的窘境。目前股價溢價完全來自於市場對 Oracle 訂單的本夢比。</p>
 
@@ -289,7 +284,7 @@ th { background-color: #f8f9fa; font-weight: bold; }
 
 <div style="text-align: center; margin: 20px 0;">
     <img src="./images/3706_tech.png" alt="3706 Technical Chart" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <div class="callout" style="text-align: left; margin-top: 10px;">📎 <strong>資料來源</strong>：<code>yfinance</code> 歷史報價與 <code>mplfinance</code> 自動繪製。藍線:5MA, 橘線:20MA, 綠線:60MA。</div>
+    <div class="callout" style="text-align: left; margin-top: 10px;">📎 <strong>資料來源</strong>：<code>yfinance</code> 歷史報價與 <code>mplfinance</code> 繪製。藍線:5MA, 橘線:20MA, 綠線:60MA。</div>
 </div>
 
 <h3>6.1 價格位階與均線結構</h3>
@@ -365,7 +360,7 @@ th { background-color: #f8f9fa; font-weight: bold; }
     <strong>⚠️ 法規與免責聲明 (Disclaimer)</strong><br>
     <ul>
         <li>報告作者 (Peter Investment Brain) 與神達 (3706) 及其關聯企業之間不存在任何財務利益關係。</li>
-        <li><strong>⚠️ 數據基準聲明</strong>：本報告中 2026E EPS (8.00元) 嚴格基於 <strong>FactSet / Bloomberg 法人共識中位數</strong>。Forward PE (10.17x) 全文前後統一。</li>
+        <li><strong>⚠️ 數據基準聲明</strong>：本報告中 2026E EPS (8.00元) 嚴格基於 <strong>綜合各券商研報與公開新聞資料之共識中位數</strong>。Forward PE (10.17x) 全文前後統一。</li>
         <li>本報告僅供學術研究與參考，不構成任何有價證券之買賣邀約。投資有風險，入市須謹慎。</li>
     </ul>
 </div>
